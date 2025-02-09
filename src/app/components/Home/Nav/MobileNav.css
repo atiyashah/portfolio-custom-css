@@ -1,0 +1,50 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 10000;
+}
+
+.overlay.show {
+    display: block;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    background: #1E40AF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: left 0.3s ease-in-out;
+    z-index: 10006;
+}
+
+.mobile-nav.show {
+    left: 0;
+}
+
+.navlink {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.close-icon {
+    position: absolute;
+    top: 1.4rem;
+    right: 1.4rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    color: white;
+    cursor: pointer;
+}

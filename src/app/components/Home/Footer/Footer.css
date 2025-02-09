@@ -1,0 +1,135 @@
+/* Base Styles */
+.footer-container {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background-color: black;
+  }
+  
+  .footer-content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-bottom: 5rem;
+    border-bottom: 1.4px solid rgba(75, 85, 99, 0.4); /* Tailwind's border-gray-600 with opacity */
+  }
+  
+  .brand-name {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .brand-name span {
+    color: #dc2626; /* Tailwind's text-red-600 */
+  }
+  
+  .brand-description {
+    color: #9ca3af; /* Tailwind's text-gray-400 */
+    margin-top: 1rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .social-icon {
+    color: #9ca3af; /* Tailwind's text-gray-400 */
+    font-size: 30px;
+  }
+  
+  .social-icon:hover {
+    color: #d97706; /* Tailwind's hover:text-yellow-600 */
+  }
+  
+  .quick-links {
+    text-align: left; /* Links ko left align karein */
+  }
+  
+  .quick-links-heading {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1.4rem;
+    font-size: 17px;
+  }
+  
+  .quick-link {
+    color: white;
+    opacity: 0.8;
+    font-size: 15px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    display: block; /* Har link ko alag line mein dikhane ke liye */
+  }
+  
+  .quick-link:hover {
+    color: #fde047; /* Tailwind's hover:text-yellow-300 */
+  }
+  
+  .address-section {
+    text-align: left; /* Address ko left align karein */
+  }
+  
+  .address-heading {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 1.4rem;
+    font-size: 17px;
+  }
+  
+  .address-item {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 0.5rem;
+  }
+  
+  .address-icon {
+    width: 1rem;
+    height: 1rem;
+    color: #fde047; /* Tailwind's text-yellow-400 */
+  }
+  
+  .address-text {
+    color: white;
+    opacity: 0.75;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  
+  .copyright-text {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.4rem;
+    color: white;
+    opacity: 0.7;
+    text-align: center; /* Copyright text ko center mein rakhein */
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .footer-content {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+  
+    .quick-links {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .address-section {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .footer-content {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for desktops */
+    }
+  }

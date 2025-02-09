@@ -1,0 +1,33 @@
+.heading-container {
+    text-align: center;
+    padding: 0.5rem; /* p-2 equivalent */
+  }
+  
+  .heading-sub {
+    font-weight: 600; 
+    font-size: 22px; 
+    color: #fde047; 
+  }
+  
+  .heading-primary {
+    font-weight: 700; /* font-bold equivalent */
+    font-size: 25px; /* text-[25px] equivalent */
+    color: white; /* text-white equivalent */
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 640px) {
+    .heading-primary {
+      font-size: 30px; /* sm:text-[30px] equivalent */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .heading-sub {
+      font-size: 28px; /* md:text-[28px] equivalent */
+    }
+  
+    .heading-primary {
+      font-size: 38px; /* md:text-[38px] equivalent */
+    }
+  }

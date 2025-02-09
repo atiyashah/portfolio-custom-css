@@ -1,0 +1,36 @@
+.about-info-box {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  
+  @media (min-width: 640px) {
+    .about-info-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .info-item {
+      margin-bottom: 0;
+    }
+  }
+  
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    color: #fde047; /* Tailwind's yellow-300 */
+  }
+  
+  .text {
+    font-size: 17px;
+    color: white;
+    margin-left: 0.75rem; /* space-x-3 equivalent */
+  }

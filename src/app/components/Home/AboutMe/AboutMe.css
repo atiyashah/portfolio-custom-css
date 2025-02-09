@@ -1,0 +1,33 @@
+.about-me-container {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .about-me-content {
+    width: 80%;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  
+  @media (min-width: 1280px) {
+    .about-me-content {
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 3rem;
+    }
+  }
+  
+  .personal-info-heading {
+    margin-bottom: 1.4rem;
+    font-size: 27px;
+    font-weight: 600;
+    color: #f97316; /* Tailwind's orange-500 */
+  }
+  
+  .about-image {
+    margin-left: auto;
+    margin-right: auto;
+  }
